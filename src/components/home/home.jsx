@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <section className="bienvenidos">
-                <ItemListContainer greatings={"¡Bienvenidos!"}/>
+                <ItemListContainer />
             </section>
         </>
     )
