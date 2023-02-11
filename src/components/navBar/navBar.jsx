@@ -18,10 +18,10 @@ export default function NavBar() {
                         <Nav.Link href="/carrito"><CartWidget /></Nav.Link>
                         <NavDropdown title="Categorias" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/category/organica">Organica</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                            <NavDropdown.Item href="/category/industrial">
                                 Industrial
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Sin Palo</NavDropdown.Item>
+                            <NavDropdown.Item href="/category/SinPalo">Sin Palo</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
                                 Separated link

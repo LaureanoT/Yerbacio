@@ -7,7 +7,7 @@ export const CartWidget = () => {
         <>
             <div>
                 <HiShoppingCart />
-                <span>5</span>
+                <span>0</span>
             </div>
         </>
     );
