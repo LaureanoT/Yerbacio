@@ -1,5 +1,4 @@
 import React from "react";
-import yerba1 from "../../images/descarga.jpg"
 import {AuxiliarProductosOrganico} from "../../utils/data"
 import { useLocation } from "react-router-dom";
 export default function ItemDetailConteiner(){

@@ -3,19 +3,20 @@ import "./Cards.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export default function Cards({ id, imagen, nombre, info, buttons, category }) {
+
+
+export default function Cards({ id, nombre, imagen, info, addToCart }) {
+  const handleAddToCart = () => {
+    addToCart(id, nombre, imagen, info);
+  };
+
   return (
-    <>
-      <div className="cardProductos">
-        <img src={imagen} alt="" />
-        <h1>{nombre}</h1>
-        <p>{info}</p>
-        {buttons === true ? <a href={`/category/${category}`}>¡Ingresa a la categoría!</a> : 
-        <a href={`/item/${id}`}>Mas info aca</a>}
-        <Button>Añadir al carrito</Button>
-
-      </div>
-
-    </>
-  )
+    <Card><div className="card">
+    <img src={imagen} alt={nombre} />
+    <h2>{nombre}</h2>
+    <p>{info}</p>
+    <Button onClick={handleAddToCart}>Agregar al carrito</Button>
+  </div>
+  </Card>
+  );
 }
