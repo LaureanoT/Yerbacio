@@ -7,7 +7,11 @@ export default function ItemListContainer() {
 
   const addToCart = (product) => {
     setCart([...cart, product]);
+
+    console.log(cart)
   };
+
+  
 
   return (
     <div className="listenContainer">
