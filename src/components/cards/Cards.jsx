@@ -1,12 +1,15 @@
-// Cards.js
-import React from "react";
+import React, {useContext} from "react";
 import "./Cards.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import CartContext from "../Context/CartContext";
 
-export default function Cards({ product, addToCart }) {
+export default function Cards({ product}) {
+  const { addToCart } = useContext(CartContext);
+
   const handleAddToCart = () => {
     addToCart(product);
+
   };
 
   return (

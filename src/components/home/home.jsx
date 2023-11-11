@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import ItemListContainer from "../itemListContainer/itemListContainer";
+import CartContext from "../Context/CartContext";
 
-export default function Home({addToCart}) {
-  
+export default function Home() {
+    const { addToCart } = useContext(CartContext);
 
   return (
     <>
