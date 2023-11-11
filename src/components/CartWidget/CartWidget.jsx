@@ -4,12 +4,12 @@ import "./CartWidget.css"
 
 
 
-export const CartWidget = () => {
+export const CartWidget = ({quantityItems}) => {
     return (
         <>
             <div>
                 <HiShoppingCart />
-                <span>0</span>
+                <span>{quantityItems}</span>
             </div>
         </>
     );
