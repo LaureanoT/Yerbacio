@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="bienvenidos">
-        <h1>Welcome to Yerbacio asd</h1>
+        <h1>Welcome to Yerbacio</h1>
       </section>
       <ItemListContainer addToCart={addToCart}></ItemListContainer>
     </>
